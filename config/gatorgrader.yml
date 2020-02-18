@@ -33,5 +33,5 @@ CountCommits --count 3
 ExecuteCommand --command "gradle build"
 CountCommandOutput --command "gradle -q --console plain interactiveGradeRun" --count 3
 MatchCommandRegex --command "gradle -q --console plain interactiveGradeRun" --regex "\{[A-Z]+\}" --count 0 --exact
-MatchCommandRegex --command "gradle -q --console plain interactiveGradeRun" --regex "[0-9]+\.([0-9]+)?" --count 3 --exact`
+MatchCommandRegex --command "gradle -q --console plain interactiveGradeRun" --regex "[0-9]+(\.[0-9]+)?" --count 3 --exact
 MatchCommandRegex --command "gradle -q --console plain interactiveGradeRun" --regex ">(\s)?[0-9]+" --count 1 --exact
