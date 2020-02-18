@@ -36,11 +36,10 @@ run {
 }
 
 task gradeRun(type: Exec) {
-  doLast{
     File file = new File("input/test.case")
     Scanner input = new Scanner(file);
     while(input.hasNextLine()){
-      println input.nextLine();
+      String test = input.nextLine();
+      commandLine "echo",test
     }
-  }
 }
