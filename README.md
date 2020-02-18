@@ -107,7 +107,7 @@ Given the random nature of `Random`, it is possible that your generator will cre
 - [ ] Contains no:
     * `TODO` markers
     * `{Your Name Here}` markers
-- [ ] Contains 300 words
+- [ ] Contains 350 words
 - [ ] Written in correct markup (passes `mdl`)
 - [ ] Responds to all questions
 
