@@ -41,7 +41,7 @@ task interactiveGradeRun (type: JavaExec, dependsOn: 'classes') {
   main = 'labsix/WizardTest'
   //String inputs = "Gatortown\nwizard\nthumb acquisition\ncrushed beetle\n";
   //InputStream stream = new ByteArrayInputStream(inputs.getBytes("UTF8"))
-  File file = new File("inputs/test.case");
+  File file = new File("input/test.case");
   InputStream stream = new FileInputStream(file);
   standardInput = stream
 }
