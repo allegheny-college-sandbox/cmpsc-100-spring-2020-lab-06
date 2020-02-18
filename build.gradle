@@ -40,6 +40,6 @@ task interactiveGradeRun (type: JavaExec, dependsOn: 'classes') {
   classpath = sourceSets.main.runtimeClasspath
   main = 'labsix/WizardTest'
   String inputs = "Gatortown\nwizard\nthumb acquisition\ncrushed beetle\n";
-  InputStream stream = new ByteArrayInputStream(inputs.getBytes(StandardCharsets.UTF_8))
+  InputStream stream = new ByteArrayInputStream(inputs.getBytes("UTF_8"))
   standardInput = stream
 }
