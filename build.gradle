@@ -31,7 +31,10 @@ checkstyle {
   configFile = new File(rootDir, "config/checkstyle/google_checks.xml")
 }
 
-run(type:Exec) {
+run {
   standardInput = System.in
+}
+
+task gradeRun(type: Exec) {
   commandLine 'Gatortown'
 }
