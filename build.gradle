@@ -35,16 +35,8 @@ run {
   standardInput = System.in
 }
 
-task interactiveGradeRun(type: JavaExec, dependsOn: 'classes') {
+task interactiveGradeRun(type: JavaExec, dependsOn: 'classes') <<< "Gatortown\nwizard\nthumb acquisition\ncrushed beetle\n"{
   apply plugin: 'application'
   classpath = sourceSets.main.runtimeClasspath
   main = 'labsix/WizardTest'
-  File file = new File("input/test.case")
-  Scanner input = new Scanner(file)
-  standardInput = System.in
-  doLast{
-    while(input.hasNextLine()){
-      println input.nextLine();
-    }
-  }
 }
