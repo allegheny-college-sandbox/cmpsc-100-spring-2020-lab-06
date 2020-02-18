@@ -36,8 +36,8 @@ run {
 }
 
 task interactiveGradeRun(type: JavaExec, dependsOn: ['compileJava','processResources','classes','jar','startScripts','distTar','distZip','assemble','processTestResources','compileTestJava','testClasses','test']) {
-  mainClassName = 'labsix.WizardTest'
+  main = project.getProperty('mainClassName')
   File file = new File("input/test.case")
-  InputStream stream = new FileInputStream(file);
+  InputStream stream = new FileInputStream(file)
   standardInput = stream
 }
