@@ -31,7 +31,7 @@ checkstyle {
   configFile = new File(rootDir, "config/checkstyle/google_checks.xml")
 }
 
-run {
+run(type:Exec) {
   standardInput = System.in
-  commandLine "Gatortown"
+  commandLine 'Gatortown'
 }
