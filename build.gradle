@@ -36,6 +36,7 @@ run {
 }
 
 task gradeRun(type: JavaExec) {
+    mainClassName = 'labsix.WizardTest'
     File file = new File("input/test.case")
     InputStream stream = new FileInputStream(file);
     standardInput = stream
