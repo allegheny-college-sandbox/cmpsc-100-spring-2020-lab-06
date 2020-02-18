@@ -37,7 +37,7 @@ run {
 
 task interactiveGradeRun(type: JavaExec) {
   apply plugin: 'application'
-  classpath = sourceSets.main.runtimeClassPath
+  classpath = sourceSets.main.runtimeClasspath
   main = 'src/main/java/labsix/labsix/WizardTest'
   File file = new File("input/test.case")
   InputStream stream = new FileInputStream(file)
