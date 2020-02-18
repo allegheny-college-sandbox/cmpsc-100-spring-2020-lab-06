@@ -40,5 +40,5 @@ script:
   - gradle clean
   - gradle check
   - gradle build
-  - gradle run
+  - gradle interactiveGradleRun
   - gradle grade -x build
