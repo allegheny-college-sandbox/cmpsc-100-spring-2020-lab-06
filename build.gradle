@@ -35,9 +35,9 @@ run {
   standardInput = System.in
 }
 
-task interactiveGradeRun(type: JavaExec, dependsOn: ['compileJava','processResources','classes','jar','startScripts','distTar','distZip','assemble','processTestResources','compileTestJava','testClasses','test']) {
+task interactiveGradeRun(type: JavaExec) {
   apply plugin: 'application'
-  main = project.getProperty('mainClassName')
+  main = 'src/main/java/labsix/labsix/WizardTest'
   File file = new File("input/test.case")
   InputStream stream = new FileInputStream(file)
   standardInput = stream
