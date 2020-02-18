@@ -1,0 +1,35 @@
+---
+name: lab-06
+break: true
+indent: 4
+---
+
+src/main/java/labfive:
+    DecoderRing.java:
+        ConfirmFileExists
+        CountSingleLineComments --language Java --count 10
+        MatchFileFragment --fragment "TODO" --count 0 --exact
+        MatchFileFragment --fragment "{YOUR NAME HERE}" --count 0 --exact
+        MatchFileFragment --fragment "new Scanner(System.in);" --count 1 --exact
+        MatchFileFragment --fragment "new Random();" --count 1
+        MatchFileFragment --fragment "(int)" --count 5
+        MatchFileFragment --fragment ".replace(" --count 7 --exact
+        MatchFileFragment --fragment ".valueOf(" --count 3 --exact
+        MatchFileFragment --fragment ".nextDouble() --count 2 --exact
+        MatchFileFragment --fragment ".nextInt()" --count 1 --exact
+        MatchFileFragment --fragment ".nextLine()" --count 4 --exact
+
+writing:
+    reflection.md:
+        ConfirmFileExists
+        mdl --rules ~MD009,~MD012,~MD014,~MD013,~MD022,~MD026,~MD031
+        CountFileWords --count 300
+        CountFileParagraphs --count 6
+        MatchFileFragment --fragment "TODO" --count 0 --exact
+        CountMarkdownTags --tag "code_block" --count 1 --exact
+        MatchFileFragment --fragment "{YOUR NAME HERE}" --count 0 --exact
+        
+CountCommits --count 3
+ExecuteCommand --command "gradle build"
+CountCommandOutput --command "gradle -q --console plain run" --count 7
+CountCommandRegex --regex ">(\s)?(0-9){5}" --count 1 --exact

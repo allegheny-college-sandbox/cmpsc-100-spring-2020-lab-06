@@ -1,0 +1,37 @@
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+    mavenLocal()
+    dependencies {
+      classpath "gradle.plugin.org.gatored:gatorgradle:0.4.+"
+    }
+  }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.gatored.gatorgradle'
+
+repositories {
+  mavenLocal()
+  jcenter()
+  mavenCentral()
+}
+
+apply plugin: 'application'
+mainClassName = 'labsix.WizardTest'
+
+apply plugin: 'checkstyle'
+checkstyle.toolVersion = '8.1'
+checkstyle {
+  ignoreFailures = false
+  maxWarnings = 0
+  maxErrors = 0
+  configFile = new File(rootDir, "config/checkstyle/google_checks.xml")
+}
+
+run {
+  standardInput = System.in
+  commandLine "Gatortown"
+}
