@@ -35,7 +35,7 @@ run {
   standardInput = System.in
 }
 
-task interactiveGradeRun(type: Exec, dependsOn: ['compileJava','processResources','classes']) {
+task interactiveGradeRun(type: JavaExec, dependsOn: ['compileJava','processResources','classes']) {
   File file = new File("input/test.case")
   InputStream stream = new FileInputStream(file);
   standardInput = stream
