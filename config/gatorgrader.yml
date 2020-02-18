@@ -31,5 +31,5 @@ writing:
         
 CountCommits --count 3
 ExecuteCommand --command "gradle build"
-CountCommandOutput --command "gradle -q --console plain gradleRun" --count 7
-MatchCommandRegex --command "gradle -q --console plain gradleRun" --regex ">(\s)?(0-9){5}" --count 1 --exact
+CountCommandOutput --command "gradle -q --console plain run" --count 7
+MatchCommandRegex --command "gradle -q --console plain run" --regex ">(\s)?(0-9){5}" --count 1 --exact

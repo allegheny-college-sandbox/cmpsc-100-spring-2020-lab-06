@@ -32,13 +32,7 @@ checkstyle {
 }
 
 run {
-  standardInput = System.in
-}
-
-task gradeRun(type: JavaExec) {
-    classpath "gradle.plugin.org.gatored:gatorgradle:0.4.+"
-    main = 'labsix.WizardTest'
-    File file = new File("input/test.case")
-    InputStream stream = new FileInputStream(file);
-    standardInput = stream
+  File file = new File("input/test.case")
+  InputStream stream = new FileInputStream(file);
+  standardInput = stream
 }
