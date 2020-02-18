@@ -40,6 +40,9 @@ task interactiveGradeRun(type: JavaExec, dependsOn: 'classes') {
   classpath = sourceSets.main.runtimeClasspath
   main = 'labsix/WizardTest'
   File file = new File("input/test.case")
-  InputStream stream = new FileInputStream(file)
-  standardInput = stream
+  Scanner input = new Scanner(file)
+  standardInput = System.in
+  while(input.hasNextLine()){
+    println input.nextLine();
+  }
 }
