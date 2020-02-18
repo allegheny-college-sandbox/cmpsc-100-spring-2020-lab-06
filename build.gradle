@@ -35,7 +35,8 @@ run {
   standardInput = System.in
 }
 
-task gradeRun(type: Exec) {
+task gradeRun(type: Exec, dependsOn:'run') {
+
     File file = new File("input/test.case")
     Scanner input = new Scanner(file);
     while(input.hasNextLine()){
