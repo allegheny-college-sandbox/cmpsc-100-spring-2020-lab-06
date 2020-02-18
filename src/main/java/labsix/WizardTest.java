@@ -60,6 +60,8 @@ public class WizardTest {
     double amount = generator.nextDouble() * 100;
     question = question.replace("{AMOUNT}", String.valueOf(amount));
     
+    System.out.println();
+    
     // Calculate the question's answer
     
     int answer = (int)(amount / ounces) * quantity;

@@ -74,6 +74,7 @@ Enter the name of a fictional place: Gatortown
 Enter the singular form of a type of job: wizard
 Enter the title of a potion: thumb acquisition
 Enter the name of an ingredient: crushed beetle
+
 In Gatortown, wizards are going wild over thumb acquisition potions. In order to meet the demand, you need to make more of them. Among other ingredients, the recipe requires 4.302752163991519 ounces of crushed beetle. If the recipe makes 5 potions, how many potions does 75.93142876469676 ounces make?
 
 > 85
