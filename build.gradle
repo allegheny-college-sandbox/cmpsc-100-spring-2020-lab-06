@@ -35,7 +35,7 @@ run {
   standardInput = System.in
 }
 
-task interactiveGradeRun <<< "Gatortown\nwizard\nthumb acquisition\ncrushed beetle\n" (type: JavaExec, dependsOn: 'classes') {
+task interactiveGradeRun (type: JavaExec, dependsOn: 'classes') {
   apply plugin: 'application'
   classpath = sourceSets.main.runtimeClasspath
   main = 'labsix/WizardTest'
