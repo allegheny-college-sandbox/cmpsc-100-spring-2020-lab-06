@@ -36,7 +36,8 @@ run {
 }
 
 task gradeRun(type: JavaExec) {
-    main = 'src/main/java/labsix/labsix.WizardTest'
+    classpath "gradle.plugin.org.gatored:gatorgradle:0.4.+"
+    main = 'labsix.WizardTest'
     File file = new File("input/test.case")
     InputStream stream = new FileInputStream(file);
     standardInput = stream
