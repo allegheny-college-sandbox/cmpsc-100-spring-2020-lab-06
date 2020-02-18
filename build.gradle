@@ -37,6 +37,8 @@ run {
 
 task gradeRun(type: Exec) {
   File file = new File("input/test.case")
-  InputStream stream = new FileInputStream(file);
-  standardInput = stream;
+  Scanner input = new Scanner(file);
+  while(input.hasNextLine()){
+    System.out.println(input.nextLine());
+  }
 }
