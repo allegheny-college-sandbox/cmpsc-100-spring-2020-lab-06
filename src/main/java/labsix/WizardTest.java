@@ -51,6 +51,8 @@ public class WizardTest {
     
     Random generator = new Random();
     
+    // Generate random numbers
+    
     double ounces = generator.nextDouble() * 50;
     question = question.replace("{OUNCES}", String.valueOf(ounces));
     int quantity = generator.nextInt(10) + 1;
@@ -58,7 +60,11 @@ public class WizardTest {
     double amount = generator.nextDouble() * 100;
     question = question.replace("{AMOUNT}", String.valueOf(amount));
     
+    // Calculate the question's answer
+    
     int answer = (int)(amount / ounces) * quantity;
+    
+    // Print the question with substitutions made
 
     System.out.println(question);
     System.out.println();

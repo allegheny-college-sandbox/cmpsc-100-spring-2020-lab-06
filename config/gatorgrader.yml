@@ -12,7 +12,7 @@ src/main/java/labsix:
         MatchFileFragment --fragment "{YOUR NAME HERE}" --count 0 --exact
         MatchFileFragment --fragment "new Scanner(System.in);" --count 1 --exact
         MatchFileFragment --fragment "new Random();" --count 1
-        MatchFileFragment --fragment "(int)" --count 5
+        MatchFileFragment --fragment "(int)" --count 1
         MatchFileFragment --fragment ".replace(" --count 7 --exact
         MatchFileFragment --fragment ".valueOf(" --count 3 --exact
         MatchFileFragment --fragment ".nextDouble() --count 2 --exact
