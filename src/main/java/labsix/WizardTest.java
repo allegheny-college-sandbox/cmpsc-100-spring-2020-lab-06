@@ -53,12 +53,12 @@ public class WizardTest {
     
     double ounces = generator.nextDouble() * 50;
     question = question.replace("{OUNCES}", String.valueOf(ounces));
-    int quantity = generator.nextInt (10) + 1;
+    int quantity = generator.nextInt(10) + 1;
     question = question.replace("{QUANTITY}", String.valueOf(quantity));
     double amount = generator.nextDouble() * 100;
     question = question.replace("{AMOUNT}", String.valueOf(amount));
     
-    int answer = (int)(amount/ounces) * quantity;
+    int answer = (int)(amount / ounces) * quantity;
 
     System.out.println(question);
     System.out.println();

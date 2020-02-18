@@ -4,8 +4,8 @@ break: true
 indent: 4
 ---
 
-src/main/java/labfive:
-    DecoderRing.java:
+src/main/java/labsix:
+    WizardTest.java:
         ConfirmFileExists
         CountSingleLineComments --language Java --count 10
         MatchFileFragment --fragment "TODO" --count 0 --exact
