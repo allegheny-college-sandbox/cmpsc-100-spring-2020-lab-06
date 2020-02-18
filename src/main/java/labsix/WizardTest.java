@@ -15,7 +15,11 @@ public class WizardTest {
    *
    * @param args The command line arguments
    */
-  public static void main(String[] args) {
+  public static void main(String[] args) {    
+    // Start the generator
+    System.out.println("WIZARD TEST QUESTION GENERATOR");
+    System.out.println();
+    
     // Set up file input
     File file = null;
     Scanner fileInput = null;
@@ -26,13 +30,8 @@ public class WizardTest {
       System.exit(0);
     }
     String question = fileInput.nextLine();
-    
-    // Start the generator
-    System.out.println("WIZARD TEST QUESTION GENERATOR");
-    System.out.println();
-    
     Scanner keyboardInput = new Scanner(System.in);
-    
+
     // Replace String placeholders
     
     // Replace {PLACE} placeholder
