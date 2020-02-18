@@ -42,7 +42,9 @@ task interactiveGradeRun(type: JavaExec, dependsOn: 'classes') {
   File file = new File("input/test.case")
   Scanner input = new Scanner(file)
   standardInput = System.in
-  while(input.hasNextLine()){
-    println input.nextLine();
+  doLast{
+    while(input.hasNextLine()){
+      println input.nextLine();
+    }
   }
 }
