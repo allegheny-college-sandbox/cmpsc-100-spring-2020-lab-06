@@ -34,7 +34,3 @@ checkstyle {
 run {
   standardInput = System.in
 }
-
-task gradeRun(type: Exec) {
-  commandLine 'Gatortown'
-}
