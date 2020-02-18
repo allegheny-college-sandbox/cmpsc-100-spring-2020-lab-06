@@ -37,6 +37,6 @@ run {
 
 task gradeRun(type: Exec) {
   File file = new File("input/test.case")
-  Scanner input = new Scanner(file);
+  InputStream stream = new InputStream(file);
   standardInput = input;
 }
