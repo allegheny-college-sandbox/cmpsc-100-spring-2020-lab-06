@@ -35,12 +35,8 @@ run {
   standardInput = System.in
 }
 
-task gradeRun(type: Exec, dependsOn:'run') {
-
+task gradeRun(type: JavaExec) {
     File file = new File("input/test.case")
-    Scanner input = new Scanner(file);
-    while(input.hasNextLine()){
-      String test = input.nextLine();
-      commandLine "echo",test
-    }
+    InputStream stream = new FileInputStream(file);
+    standardInput = stream
 }
