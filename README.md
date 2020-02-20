@@ -41,7 +41,7 @@ I recommend reading the [GitHub Guides](https://guides.github.com) which GitHub 
 
 ## G. Wiz and the magical test generator
 
-![KABOOM](httphttps://raw.githubusercontent.com/allegheny-college-sandbox/cmpsc-100-spring-2020-lab-06/media/media/g-wiz-test-explosion.png)
+![KABOOM](https://raw.githubusercontent.com/allegheny-college-sandbox/cmpsc-100-spring-2020-lab-06/media/media/g-wiz-test-explosion.png)
 
 As a side job to his current gig as an adjunct professor in the wizard department at Reptile State ("2-4-6-8 We've Even Got Invertebrates!"), G. Wiz joined the Wizard Animal Certification (WAC) examination board. Part of their responsibilities involves writing test questions for the annual licensure and certification test. G. Wiz is responisble for the potion word problems.
 
